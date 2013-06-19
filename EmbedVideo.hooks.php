@@ -66,8 +66,6 @@ abstract class EmbedVideo {
 		// Initialize things once
 		if (!self::$initialized) {
 			self::VerifyWidthMinAndMax();
-			// Add system messages
-			wfLoadExtensionMessages('embedvideo');
 			$parser->disableCache();
 			self::$initialized = true;
 		}
